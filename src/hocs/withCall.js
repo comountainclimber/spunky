@@ -36,7 +36,7 @@ export default function withCall(
     class ComponentWithFetch extends React.Component<Props> {
       static displayName = 'ComponentWithFetch';
 
-      componentWillMount = () => {
+      UNSAFE_componentWillMount = () => {
         this.props[propName](mapPropsToAction(this.props));
       }
 
